@@ -11,10 +11,10 @@ dataRefTransform:
   queries:
     Porta1: {tabularKeyColumn: "porta1"}
 
-
 cells:
   porta1:
-    dataRef: "porta1"
-    thresholds:
-      - {color: "green", level: 1}
-      - {color: "red", level: 0}
+    dataRef: "Interface Gi0/1(PHFWNG01): Operational status"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 1}
+        - {color: "red", level: 0}

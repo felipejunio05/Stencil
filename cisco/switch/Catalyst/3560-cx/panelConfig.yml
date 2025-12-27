@@ -5,11 +5,9 @@ anchorLinks:
 
 datapoint: "last"
 
-cellIdPreamble: "cell-"
 dataRefTransform:
-  namespaced: true
-  queries:
-    Porta1: {tabularKeyColumn: "porta1"}
+  namespaced: false
+  cellIdPreamble: "cell-"
 
 cells:
   porta1:

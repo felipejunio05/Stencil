@@ -1,9 +1,10 @@
-config:
-  - id: porta1           # O ID que está dentro do seu SVG
-    type: fill            # Tipo de interação (mudar cor de fundo)
-    metric: porta1    # O nome da métrica vindo da sua query
-    thresholds:
-      - value: 0
-        color: red
-      - value: 1
-        color: green
+cells:
+  - id: porta1             # O ID que você deu no draw.io (ex: porta1)
+    type: fill             # Vai preencher a cor da porta
+    fill:
+      metric: porta1       # Nome EXATO da métrica que vem da sua Query
+      thresholds:
+        - level: 0         # Level em vez de Value
+          color: "#ff0000" # Vermelho (Hexadecimal é mais garantido)
+        - level: 1
+          color: "#00ff00" # Verde
